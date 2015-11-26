@@ -127,9 +127,10 @@ LOCAL_C_INCLUDES += \
 	external/openssl/include\
 	external/libpcap
 
-LOCAL_SHARED_LIBRARIES += libssl libcrypto
-
-LOCAL_STATIC_LIBRARIES += libpcap
+LOCAL_STATIC_LIBRARIES:= \
+	libcrypto_static\
+	libssl\
+	libpcap
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 
