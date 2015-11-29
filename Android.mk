@@ -128,8 +128,8 @@ LOCAL_C_INCLUDES += \
 	external/libpcap
 
 LOCAL_STATIC_LIBRARIES:= \
+	libssl_static\
 	libcrypto_static\
-	libssl\
 	libpcap
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
